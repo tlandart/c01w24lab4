@@ -1,3 +1,4 @@
+Create a new functional component in the frontend/src directory called `NoteSearch.js`
 ```jsx
 import React from 'react';
 
@@ -20,7 +21,40 @@ export default NoteSearch;
 
 ```
 
+In App.js, add the following:
 
+```jsx
+import NoteSearch from "./NoteSearch";
+...
+const [searchQuery, setSearchQuery] = useState("");
+...
+
+const filteredNotes = searchQuery
+? notes.filter(note =>
+    note.title.toLowerCase().includes(searchQuery.toLowerCase())
+  )
+: notes;
+
+...
+<NoteSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+...
+
+filteredNotes ?
+filteredNotes.map((entry) => {
+  return (
+  <div key={entry._id}>
+    <Note
+    entry={entry} 
+    editNote={editNote} 
+    deleteNote={deleteNote}
+    />
+  </div>
+  )
+})
+```
+
+
+See the full source code of App.js:
 
 ```jsx
 import React, {useState, useEffect} from "react"
