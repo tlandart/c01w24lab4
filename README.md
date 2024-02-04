@@ -8,8 +8,8 @@
 - [Prerequisites](#pre)
 - [Background](#bg)
 - [Cherry-Picking a Commit](#cherry-picking-a-commit)
-- [Rebasing a Branch](#rebasing-a-branch)
 - [Cherry-Picking from a Remote Branch](#cherry-picking-from-a-remote-branch)
+- [Rebasing a Branch](#rebasing-a-branch)
 - [Rebasing with a Remote Branch](#rebasing-with-a-remote-branch)
 - [Resources](#resources)
 
@@ -89,6 +89,31 @@ Cherry-picking allows you to apply changes from specific commits from one branch
     git cherry-pick --abort
     ```
 
+
+<a id="cherry-picking-from-a-remote-branch"></a>
+## Cherry-Picking from a Remote Branch
+
+To cherry-pick a commit from a remote branch, you first need to make sure your local repository is aware of the remote branch's state.
+
+### Steps:
+
+1. **Fetch Remote Changes**: Update your local repo's information about remote branches.
+
+    ```bash
+    git fetch origin
+    ```
+
+2. **Cherry-Pick the Commit**: Using the commit hash from the remote branch, apply it to your current branch.
+
+    ```bash
+    git cherry-pick <commit-hash-from-remote-branch>
+    ```
+
+3. **Handle Conflicts**: Similar to local cherry-picking, resolve any conflicts and finalize the cherry-pick.
+
+Remember, when working with remote branches, especially in a team environment, it's crucial to communicate your changes to avoid conflicts and ensure a smooth workflow.
+
+
 <a id="rebasing-a-branch"></a>
 ## Rebasing a Branch
 
@@ -129,29 +154,6 @@ Rebasing updates your branch with changes from another branch, typically used to
     ```bash
     git rebase --abort
     ```
-
-<a id="cherry-picking-from-a-remote-branch"></a>
-## Cherry-Picking from a Remote Branch
-
-To cherry-pick a commit from a remote branch, you first need to make sure your local repository is aware of the remote branch's state.
-
-### Steps:
-
-1. **Fetch Remote Changes**: Update your local repo's information about remote branches.
-
-    ```bash
-    git fetch origin
-    ```
-
-2. **Cherry-Pick the Commit**: Using the commit hash from the remote branch, apply it to your current branch.
-
-    ```bash
-    git cherry-pick <commit-hash-from-remote-branch>
-    ```
-
-3. **Handle Conflicts**: Similar to local cherry-picking, resolve any conflicts and finalize the cherry-pick.
-
-Remember, when working with remote branches, especially in a team environment, it's crucial to communicate your changes to avoid conflicts and ensure a smooth workflow.
 
 
 <a id="rebasing-with-a-remote-branch"></a>
