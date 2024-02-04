@@ -11,6 +11,7 @@
 - [Rebasing a Branch](#rebasing-a-branch)
 - [Cherry-Picking from a Remote Branch](#cherry-picking-from-a-remote-branch)
 - [Rebasing with a Remote Branch](#rebasing-with-a-remote-branch)
+- [Resources](#resources)
 
 <a id="desc"></a>
 
@@ -52,12 +53,15 @@ Before starting this lab, you should have:
 
 Cherry-picking allows you to apply changes from specific commits from one branch to another.
 
+![image](https://github.com/Minjun1Kim/c01w24lab4/assets/104747956/f37be11b-4e43-45bd-90d0-4f6f9f007f31)
+
+
 ### Steps:
 
 1. **Find the Commit Hash**: Identify the commit you want to apply.
 
     ```bash
-    git log
+    git log --oneline
     ```
 
 2. **Switch to the Target Branch**: Move to the branch where you want the changes.
@@ -201,5 +205,10 @@ Rebasing your local branch with changes from a remote branch helps to maintain a
     **Caution**: Be careful with `git push --force` as it can overwrite history on the remote. It's recommended to use it only on branches where you are the sole contributor or after coordinating with your team.
 
 
+<a id="resources"></a>
+## Resources
 
+[Git cherry pick](https://www.atlassian.com/git/tutorials/cherry-pick#:~:text=Cherry%20picking%20is%20the%20act,to%20where%20it%20should%20belong.)
+[Merging vs rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing)
+[Gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
