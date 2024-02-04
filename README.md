@@ -53,7 +53,7 @@ Before starting this lab, you should have:
 
 Cherry-picking allows you to apply changes from specific commits from one branch to another.
 
-![image](https://github.com/Minjun1Kim/c01w24lab4/assets/104747956/f37be11b-4e43-45bd-90d0-4f6f9f007f31)
+<img src="./images/j2D9C.gif" width="50%" height="50%">
 
 
 ### Steps:
@@ -93,6 +93,8 @@ Cherry-picking allows you to apply changes from specific commits from one branch
 ## Rebasing a Branch
 
 Rebasing updates your branch with changes from another branch, typically used to integrate the latest changes from the main branch into your feature branch.
+
+<img src="./images/rebase.gif" width="50%" height="50%">
 
 ### Steps:
 
@@ -208,7 +210,7 @@ Rebasing your local branch with changes from a remote branch helps to maintain a
 <a id="resources"></a>
 ## Resources
 
-[Git cherry pick](https://www.atlassian.com/git/tutorials/cherry-pick#:~:text=Cherry%20picking%20is%20the%20act,to%20where%20it%20should%20belong.)
-[Merging vs rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing)
-[Gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+[Git cherry pick](https://www.atlassian.com/git/tutorials/cherry-pick#:~:text=Cherry%20picking%20is%20the%20act,to%20where%20it%20should%20belong.) <br/>
+[Merging vs rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing) <br/>
+[Gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) <br/>
 
