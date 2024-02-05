@@ -7,6 +7,7 @@
 - [Description](#desc)
 - [Prerequisites](#pre)
 - [Background](#bg)
+- [Git Workflow](#gitflow)
 - [Cherry-Picking a Commit](#cherry-picking-a-commit)
 - [Cherry-Picking from a Remote Branch](#cherry-picking-from-a-remote-branch)
 - [Rebasing a Branch](#rebasing-a-branch)
@@ -47,6 +48,24 @@ Before starting this lab, you should have:
 
 - If there are issues with a feature, we can revert the feature branch in develop.
 - If there are issues with a release, we can revert the merge commit in master.
+
+<a id="gitflow"></a>
+
+## Git Workflow
+
+Here's a git flow diagram of "merge"
+
+<img src="./images/merge.gif" width="50%" height="50%">
+
+For this lab, pull requests would have the diagram of "merge"
+
+For branching, we draw an arrow out of the commit from the branch that we are branching off of, resulting in two separate streams.
+
+You can make a git workflow diagram using software such as: https://www.eraser.io/use-case/git-diagram
+
+You can also practice and get familiar using a simulator called learn **git branching**: https://learngitbranching.js.org
+
+
 
 <a id="cherry-picking-a-commit"></a>
 ## Cherry-Picking a Commit
