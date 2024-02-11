@@ -1,0 +1,2 @@
+- In the old version, in App.js, we called deleteNoteState() BEFORE actually running fetch(). This meant we updated the react state optimistically. Instead, in the new code, we do it pessimistically.
+- In the old version, in server.js, we didn't check the response before immediately calling a status 500 (error) and showing an error popup. In the new version, we actually properly delete and update the backend.
